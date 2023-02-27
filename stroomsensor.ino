@@ -6,19 +6,19 @@
 #include "WiFi.h" // Enables the ESP32 to connect to the local network (via WiFi)
 
 // WiFi
-const char* ssid = "telenet-9DCA9";                 // Your personal network SSID
-const char* wifi_password = "hsczjjvc4Tst"; // Your personal network password
+const char* ssid = "*********";                 // Your personal network SSID
+const char* wifi_password = "*********"; // Your personal network password
 
 // MQTT
 const char* mqtt_server = "192.168.0.176";  // IP of the MQTT broker
 const char* amps_topic = "homeassistant/sensor/stroomsensor/amps";
 const char* watt_topic = "homeassistant/sensor/stroomsensor/watt";
-const char* mqtt_username = "rudy"; // MQTT username
-const char* mqtt_password = "BorisMops2015"; // MQTT password
+const char* mqtt_username = "r****"; // MQTT username
+const char* mqtt_password = "*******"; // MQTT password
 const char* clientID = "client_stroomsensor"; // MQTT client ID
 
 const int sensorIn = 16;      // pin where the OUT pin from sensor is connected on Arduino
-int mVperAmp = 100;           // this the 5A version of the ACS712 -use 100 for 20A Module and 66 for 30A Module
+int mVperAmp = 100;           // this the 20A version of the ACS712 -use 66 for 30A Module
 int Watt = 0;
 double Voltage = 0;
 double VRMS = 0;
